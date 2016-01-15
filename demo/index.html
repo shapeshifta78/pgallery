@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>jQuery pgallery</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../src/jquery.pgallery.js"></script>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<h2>Gallery pins</h2>
+
+<ul id="pins" class="pins"></ul>
+<div class="cover">
+    <div class="cover__image-area"></div>
+</div>
+
+<script>
+    $(function () {
+        var template = [
+            '<li>',
+            '<a class="pins__thumbnail" href="%bigUrl%">',
+            '<img class="pins__thumb-img" src="%thumbUrl%" alt="%boardName%">',
+            '</a>',
+            '</li>'
+        ].join('');
+
+        $('#pins').pgallery({
+            template: template
+        });
+    });
+</script>
+</body>
+</html>

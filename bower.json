@@ -1,0 +1,14 @@
+{
+	"name": "jquery-pgallery",
+	"version": "0.0.1",
+	"authors": [
+		"Thomas Horster <thomas.horster@kulturlounge.de>"
+	],
+	"description": "A simple jQuery gallery-plugin for pinterest boards.",
+	"main": "src/jquery.pgallery.js",
+	"keywords": [
+		"jquery",
+		"plugin"
+	],
+	"license": "MIT"
+}
