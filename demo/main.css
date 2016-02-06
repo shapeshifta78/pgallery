@@ -17,7 +17,7 @@ body {
     opacity: 0;
 }
 
-.cover.active {
+.cover--active {
     opacity: 1;
     height: 100%;
 }
@@ -41,6 +41,7 @@ body {
 
 .pins {
     overflow: hidden;
+    list-style: none;
 }
 
 .pins > li {

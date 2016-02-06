@@ -87,13 +87,14 @@
 
         handleOverlay: function () {
             var cover = $('body').find('div.cover');
-            $(this.element).on('click', 'a', function () {
-                cover.addClass('active');
+            $(this.element).on('click', 'a', function (e) {
+                cover.addClass('cover--active');
                 cover.find('div.cover__image-area').empty().append('<img src="' + this.href + '" alt="" />');
+                e.preventDefault();
             });
 
             cover.on('click', function () {
-                $(this).removeClass('active');
+                $(this).removeClass('cover--active');
             });
         }
 
